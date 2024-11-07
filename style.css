@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    background-image: url(bgm.jpg);
+    font-family: 'Times New Roman', Times, serif; /* Serif font added */
+}
+
+#Head {
+    font-size: 47px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif; /* Serif font for #Head */
+}
+
+.weather-container {
+    height: 611px;
+    width: 468px;
+    background-color: transparent;
+    background-color: rgba(173, 216, 230, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border: 3px solid black;
+    color: black;
+    font-family: 'Times New Roman', Times, serif; /* Serif font added */
+}
+
+img {
+    height: 200px;
+}
+
+input {
+    height: 41px;
+    width: 210px;
+    border-radius: 17px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; /* Serif font added for input */
+}
+
+button {
+    height: 41px;
+    width: 100px;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif; /* Serif font for button */
+}
+
+button:hover {
+    color: aqua;
+    background-color: rgb(103, 103, 222);
+    transition: 3s;
+}
+
+.sarch {
+    margin-inline: 2px;
+}
+
+#city {
+    font-size: 33px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif; /* Serif font for #city */
+}
+
+#type {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif; /* Serif font for #type */
+}
+
+#temp {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif; /* Serif font for #temp */
+}
