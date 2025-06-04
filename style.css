@@ -1,86 +1,79 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    background-position: center;
-    background-size: cover;
-    background-image: url(bgm.jpg);
-    font-family: 'Times New Roman', Times, serif; /* Serif font added */
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(bgm.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#Head {
-    font-size: 47px;
-    margin-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif; /* Serif font for #Head */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .weather-container {
-    height: 667px;
-    width: 468px;
-    background-color: transparent;
-    background-color: rgba(173, 216, 230, 0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    border: 3px solid black;
-    color: black;
-    font-family: 'Times New Roman', Times, serif; /* Serif font added */
+  width: 100%;
+  max-width: 470px;
+  background-color: rgba(173, 216, 230, 0.9);
+  padding: 2rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  text-align: center;
+  color: black;
+}
+
+#Head {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  margin-bottom: 1rem;
 }
 
 img {
-    height: 200px;
+  height: auto;
+  max-width: 100%;
 }
 
 input {
-    height: 41px;
-    width: 210px;
-    border-radius: 17px;
-    border: none;
-    outline: none;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif; /* Serif font added for input */
+  height: 2.5rem;
+  width: 100%;
+  max-width: 210px;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 button {
-    height: 41px;
-    width: 100px;
-    border-radius: 17px;
-    border: none;
-    cursor: pointer;
-    background-color: blue;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif; /* Serif font for button */
+  height: 2.5rem;
+  width: 100%;
+  max-width: 100px;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-    color: aqua;
-    background-color: rgb(103, 103, 222);
-    transition: 3s;
+  color: aqua;
+  background-color: rgb(103, 103, 222);
 }
 
-.sarch {
-    margin-inline: 2px;
-}
-
-#city {
-    font-size: 33px;
-    margin-top: 50px;
-    font-family: 'Times New Roman', Times, serif; /* Serif font for #city */
-}
-
-#type {
-    font-size: 33px;
-    font-family: 'Times New Roman', Times, serif; /* Serif font for #type */
-}
-
+#city,
+#type,
 #temp {
-    font-size: 33px;
-    font-family: 'Times New Roman', Times, serif; /* Serif font for #temp */
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  margin-top: 1rem;
 }
